@@ -1,0 +1,153 @@
+<apex:page showheader="false"  >
+<html>
+<head>
+    <title>Pyxis</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width-device-width, initial-scale=1"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
+    <apex:includeScript value="https://c.la1-c1-frf.salesforceliveagent.com/content/g/js/40.0/deployment.js"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <script type="text/javascript">
+    	if (!window._laq) { 
+        	window._laq = []; 
+    	}
+    	window._laq.push(function(){
+        	liveagent.showWhenOnline('57358000000L4CG', document.getElementById('liveagent_button_online_57358000000L4CG'));
+        	liveagent.showWhenOffline('57358000000L4CG', document.getElementById('liveagent_button_offline_57358000000L4CG'));
+    	});
+    	liveagent.init('https://d.la1-c1-frf.salesforceliveagent.com/chat', '57258000000L3bZ', '00D58000000P2IO');
+    	setChatWindowHeight(800);
+    	setChatWindowWidth(800);
+    	function watsonWindow(){
+        	window.open("https://pyxisbrain.eu-de.mybluemix.net", "_blank", "toolbar=no,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
+    	}
+    	function watsonDemo(){
+            window.open("https://pyxis.eu-de.mybluemix.net", "_blank", "toolbar=no,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
+            }
+   		function disabledButton(){
+            document.getElementById("liveagent_button_offline_57358000000L4CG").disabled = true;
+            }
+    </script>
+    <style>
+        .navbar {
+        	margin-bottom: 50px;
+        	border-radius: 0;
+        }
+        .jumbotron {
+        	margin-bottom: 0;
+        }
+        footer {
+        	background-color: #f2f2f2;
+            padding: 25px;
+         }
+        #liveagent_button_online_57358000000L4CG, #liveagent_button_offline_57358000000L4CG, #liveagent_button, #watson_button, #watsonDemo_button{
+        	width:40%;
+        }
+            </style>
+        </head>
+        <body onload="disabledButton()">
+            <div class="jumbotron">
+                <div class="container text-center">
+                    <h2>Hamza's Bargain Emporium</h2>      
+                    <p>Discount Codes Galore!</p>
+                </div>
+            </div>
+            
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>                        
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Deals</a></li>
+                            <li><a href="#">Stores</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="container">    
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="panel panel-danger">
+                            <div class="panel-heading">iTunes Cards - Out of Stock</div>
+                            <div class="panel-body"><img src="https://store.storeimages.cdn-apple.com/4974/as-images.apple.com/is/image/AppleInc/aos/published/images/g/if/giftcards/itunes/giftcards-itunes-green-50-2013?wid=230&hei=146&fmt=png-alpha&qlt=80&op_sharpen=0&resMode=bicub&op_usm=0.5,0.5,0,0&iccEmbed=0&layer=comp&.v=CJ0mZ2" class="img-responsive" style="width:100%" alt="itunescard"/></div>
+                        <div class="panel-footer">All Regions Available Starting From 10$</div>
+                    </div>
+                </div>
+                <div class="col-sm-4"> 
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">Google Play Cards - New Arrival!</div>
+                        <div class="panel-body"><img src="https://www.paypal-gifts.com/media/catalog/product/cache/1/small_image/9df78eab33525d08d6e5fb8d27136e95/g/p/gp_card.png" class="img-responsive" style="width:95%" alt="googlePlay"/></div>
+                        <div class="panel-footer">All Regions Available starting from 10$</div>
+                    </div>
+                </div>
+                <div class="col-sm-4"> 
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">Steam Cards - Limited Supply!</div>
+                        <div class="panel-body"><img src="http://nekojams.com/wp-content/uploads/2014/12/steam.png" class="img-responsive" style="width:105%" alt="Image"/></div>
+                        <div class="panel-footer">All regions Available starting from 10$</div>
+                    </div>
+                </div>
+            </div>
+            </div>
+           <br/>
+        <div class="container">    
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">PlayStation Plus</div>
+                        <div class="panel-body"><img src="https://cdn.arstechnica.net/wp-content/uploads/2016/08/PS-Plus.jpg" class="img-responsive" style="width:100%" alt="Image"/></div>
+                        <div class="panel-footer">3 Months - 1 Year Cards available!</div>
+                    </div>
+                </div>
+                <div class="col-sm-4"> 
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">Xbox Live</div>
+                        <div class="panel-body"><img src="https://static1.gamespot.com/uploads/original/1551/15511094/3063522-xbox_live_down.0.0.jpg" class="img-responsive" style="width:100%" alt="Image"/></div>
+                        <div class="panel-footer">1 Year Cards Newly Restocked!</div>
+                    </div>
+                </div>
+                <div class="col-sm-4"> 
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">Steam Bundle</div>
+                        <div class="panel-body"><img src="http://cdn.akamai.steamstatic.com/steam/bundles/712/mhl3vwamnpl0rskd/header_586x192.jpg?t=1498756473" class="img-responsive" style="width:100%" alt="Image"/></div>
+                        <div class="panel-footer">Now on sale for 20% off!</div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <br/>
+            <br/>
+        
+        <footer id="contact" class="container-fluid text-center">
+            <p>Feel free to contact our customer service representatives with any questions that you may have!</p>  
+            <form class="form-inline">
+                <input type ="button" value="Speak to Live Agent (Open 9AM-5PM)" id="liveagent_button_online_57358000000L4CG" onclick="liveagent.startChat('57358000000L4CG')" />
+                <input type ="button" value="No Agents Are Available. " id="liveagent_button_offline_57358000000L4CG"/>
+                	<br/>
+        		<input type = "button" value="Speak to Chatbot (Open 24 hours)" id="watson_button" onclick="watsonWindow()" />
+                <br/>
+                <input type = "button" value="Watson Car Demo" id="watsonDemo_button" onclick="watsonDemo()" />
+                <br/>
+            </form>
+        </footer>
+        
+    </body>
+</html>
+</apex:page>
